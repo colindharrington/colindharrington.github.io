@@ -1,0 +1,33 @@
+img.img{
+	display: block;
+	margin-top: 5vmin;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	width: 50%;
+	padding: 1vmin;
+	border: .1vmin solid red;
+}
+
+
+body{
+	background-color: black;
+
+}
+
+h1{
+	color: white;
+	margin: auto;
+	text-align: center;
+	padding: 10vmin;
+}
+
+p{
+	color: white;
+	top: 0vmin;
+	margin-left: 5vmin;
+	margin-right: 5vmin;
+	text-align: left;
+	text-indent: 5vmin;
+	font-family: helvetica;
+}
