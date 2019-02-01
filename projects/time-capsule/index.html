@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html>
-<title>timecapsule</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
 <style>
-.mySlides {
-	justify-content: center;
-	margin:auto;
-			}
-
-html,body{
-	background-color: black;
-	margin-top: 0;
-	margin-left: 0;
-    background-image:url('assets/stars.gif');
-    background-size:135%;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    width:100%;
-    justify-content: center;
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: silom ;
+  background-color: black;
 }
 
+* {
+  box-sizing: border-box;
+}
 
+.bg-image {
+  width: 50%;
+  height: 50%; 
+  margin: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+.img1 { background-image: url("assets/solar.jpg"); }
+.img2 { background-image: url("assets/cassini_saturn.jpg"); }
+.img3 { background-image: url("assets/earth_moon.jpg"); }
+.img4 { background-image: url("assets/earth.jpg"); }
+.img5 { background-image: url("assets/iss.jpg"); }
+.img6 { background-image: url("assets/iss_plant.jpg"); }
+.img7 { background-image: url("assets/iss_roots.jpg"); }
+.img8 { background-image: url("assets/cell.jpg"); }
+.img9 { background-image: url("assets/amino_acids.png"); }
+.img10 { background-image: url("assets/gluon_field.gif"); }
+
+.back-text {
+  color: #2d9e2f;
+  font-size: 80px;
+  border: 15px solid #2d9e2f;
+  position: fixed;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
 </style>
+</head>
 <body>
 
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="assets/solar.jpg" style="width:100vmin">
-  <img class="mySlides" src="assets/cassini_saturn.jpg" style="width:81.5%">
-  <img class="mySlides" src="assets/earth_moon.jpg" style="width:100.5vmin">
-  <img class="mySlides" src="assets/earth.jpg" style="width:115.5vmin">
-  <img class="mySlides" src="assets/iss.jpg" style="width:100vmin">
-  <img class="mySlides" src="assets/iss_plant.jpg" style="width:96vmin">  
-  <img class="mySlides" src="assets/iss_roots.jpg" style="width:96vmin">
-  <img class="mySlides" src="assets/cell.jpg" style="width:113vmin">
-  <img class="mySlides" src="assets/amino_acids.png" style="width:86.8vmin">
-  <img class="mySlides" src="assets/gluon_field.gif" style="width:85.2vmin">
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class="bg-image img6"></div>
+<div class="bg-image img7"></div>
+<div class="bg-image img8"></div>
+<div class="bg-image img9"></div>
+<div class="bg-image img10"></div>
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
+<div class="back-text">Home</div>
 
 </body>
 </html>
