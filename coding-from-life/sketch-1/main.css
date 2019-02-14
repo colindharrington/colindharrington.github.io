@@ -1,0 +1,95 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: white;
+  margin: 30px auto;
+  position: relative;
+}
+
+.frame{
+	background-color: lightgrey;
+}
+
+
+.container1{
+	display:flex;
+	z-index: 1;
+}
+.camera{
+	margin-top: 350px;
+	margin-left: 200px;
+	transform: skewY(-6deg);
+	width: 150px;
+	height: 100px;
+	background-color: black;
+}
+
+.container2{
+	display:flex;
+	z-index: 0;
+}
+.book1{
+	margin-top: -15px;
+	margin-left: 160px;
+	transform: skewY(-6deg);
+	width: 300px;
+	height: 70px;
+	background-color: cyan;
+}
+
+.container3{
+	display:flex;
+	z-index: -1;
+}
+.book2{
+	margin-top: -15px;
+	margin-left: 115px;
+	transform: skewY(-6deg);
+	width: 350px;
+	height: 25px;
+	background-color: grey;
+}
+
+.container4{
+	display:flex;
+	z-index: -1;
+}
+.orange{
+	position: absolute;
+	top: 400px;
+	left: 475px;
+	width: 80px;
+	height: 80px;
+	background-color: orange;
+	border-radius: 50%;
+	transform: skewY(-5deg);
+}
+
+
+
+
+.orange-1 {
+	left: 500px;
+	height: 100px;
+}
+
+.orange-2 {
+	left: 410px;
+	height: 100px;
+}
+
+.orange-3 {
+	left: 590px;
+	height: 100px;
+}
