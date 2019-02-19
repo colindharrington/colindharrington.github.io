@@ -20,3 +20,105 @@ body {
 }
 
 /* Your CSS goes here */
+
+
+
+.table{
+	position: absolute;
+	top:5%;
+	left: 40%;
+	height: 90%;
+	width: 35%;
+	background-color: black;
+	transform: skewX(-5deg);
+	z-index: 0;
+}
+
+.book-middle{
+	position: absolute;
+	top:75%;
+	left: 42%;
+	height: 10%;
+	width: 10%;
+	background-color: lightgrey;
+	transform: skewX(20deg) rotate(-15deg);
+	z-index: 1;
+}
+
+.book-bottom{
+	position: absolute;
+	top:73%;
+	left: 42%;
+	height: 10%;
+	width: 10%;
+	background-color: darkcyan;
+	transform: skewX(20deg) rotate(-15deg);
+	z-index: 1;
+}
+
+.camera{
+	position: absolute;
+	top:70%;
+	left: 44%;
+	height: 10%;
+	width: 5%;
+	background-color: darkgrey;
+	transform: skewX(-5deg) rotate(-94deg);
+	z-index: 1;
+}
+
+.orange{
+	position: absolute;
+	width: 4%;
+	height: 7%;
+	background-color: orange;
+	border-radius: 50%;
+	z-index: 2;
+	}
+
+
+.orange-1{
+	top:58%;
+	left:58%;
+	}
+
+.orange-2{
+	top:54%;
+	left:54%;	
+	}
+
+.orange-3{
+	top:50%;
+	left:50%;	
+	}
+
+
+.cat{
+	position: absolute;
+	transform: rotate(90deg);
+	left: 60%;
+	top: 30%;
+	width: 10%;
+	height: 10%;
+	background-color: white;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+.blah{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 1%;
+	top: 1%;
+	background-color: red;
+	border-radius: 50%;
+	z-index: 2
+
+}
+
+
+
+
+
+}
