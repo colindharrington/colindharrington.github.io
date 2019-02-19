@@ -1,0 +1,55 @@
+	html,body{
+		background-color: white;
+		text-align: center;
+	}
+
+	a{
+		color: #eaeaea;
+		text-decoration: underline;
+		font-size: 50px;
+	}
+
+	p{
+		color: white;
+		font-family: georgia;
+		font-size: 22px;
+		z-index: 0;
+
+	}
+
+	h1{
+		font-family: chicago;
+		color: #eaeaea;
+	}
+
+
+	h3{
+		color: white;
+		font-family: times;
+		font-family: regular;
+	}
+
+	button{
+		opacity: 50%;
+	}
+
+	.whitetext{
+		display: flex;
+		position: relative;
+		justify-content: space-around;
+		top: 5vmin;
+		margin-left: 7vmin;
+		margin-right: 7vmin; 
+		font-family: chicago;
+	}
+
+
+	#songs {
+		width: 100%;
+		padding: 50px 0;
+		text-align: center;
+		background-color: #eaeaea;
+	 	margin-top: 20px;
+		display:none;
+		color: white;
+	}
