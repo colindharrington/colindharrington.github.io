@@ -3,16 +3,25 @@
 		text-align: center;
 	}
 
+	audio{
+		opacity: .3;
+	}
+
+	button{
+		opacity: .3;
+	}
+
+
 	a{
 		color: #eaeaea;
 		text-decoration: underline;
-		font-size: 50px;
+		font-size: 20px;
 	}
 
 	p{
-		color: white;
+		color: #fafafa;
 		font-family: georgia;
-		font-size: 22px;
+		font-size: 14px;
 		z-index: 0;
 
 	}
