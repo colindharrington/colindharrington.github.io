@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+
+body, html {
+  height: 100%;
+  background-image: url('assets/stars.gif');
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+
+@keyframes moveMoon{
+		0%{
+			transform: translate(-40vmin);
+		}
+		100%{
+			transform: translate(40vmin);
+		}
+	}
+
+img{
+position: fixed;
+transform: rotate(73deg);
+height: 90%;
+width: 50%;
+top: 60vmin;
+}
+
+.shoot{
+	position: fixed;
+	top:10vmin;
+	size: 10%;
+	transform: rotate(30deg);
+	opacity: .3;
+}
+
+.water{
+position: fixed;
+transform: rotate(60deg);
+height: 150%;
+/*width: 50vmin;*/
+top: 20vmin;
+}
+
+
+.moon {
+	color: red;
+	width: 80px;
+	height: 80px;
+ 	border-radius: 50%;
+ 	box-shadow: 15px 15px 0 0 red;
+ 	animation: moveMoon 20s infinite alternate;
+    }
+
+</style>
+<body>
+
+	<div class="moon"></div>
+	<img class="water" src="assets/water.gif">
+	<img class="shoot" src="assets/shoot.gif">
+
+</body>
+</html>

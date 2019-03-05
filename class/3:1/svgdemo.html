@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+</head>
+<style>
+	
+html,body{
+	background-color: lightgrey;
+}
+
+@keyframes spinType{
+		0%{
+			transform: rotate(.5turn)
+		}
+		60%{
+			transform: rotate(.7turn)
+		}
+		100%{
+			transform: rotate(1turn);
+		}
+	}
+
+@keyframes yinyangSpin{
+		0%{
+			transform: rotate(0turn);
+		}
+		100%{
+			transform: rotate(1turn);
+		}
+	}
+
+@keyframes yinyangcolor{
+		0%{
+			fill:default;
+		}
+/*		50%{
+			opacity: .5;
+		}*/
+		100%{
+			fill:#6d79cd;
+		}
+	}
+
+@keyframes yinyangop{
+		0%{
+			opacity: 1;
+		}
+
+		100%{
+			opacity: .5;
+		}
+	}
+
+	div.item{
+		animation: spinType 2s ease-in-out 3s;
+	}
+
+	#yin-yang{
+		height: 500px;
+		animation:yinyangSpin 5s ease-in-out infinite;
+		display: flex;
+		justify-content: space-around;
+		margin: auto;
+	}
+
+	svg.yin-yang{
+		animation: yinyangSpin 5s ease-in-out 5s;
+	}
+
+	#yin-yang:hover{
+		animation-play-state: paused;
+		cursor: pointer;
+	}
+
+	#yin-yang path, #yin-yang circle {
+		animation: yinyangcolor 5s ease-in infinite alternate, yinyangop 5s ease-in infinite alternate;
+	}
+
+
+}
+
+
+
+</style>
+<body>
+
+	<div>
+		<svg id="yin-yang" data-name="yin-yang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><style>.cls-1{fill:#blue;}</style></defs><title>yin-yang</title><path class="cls-1" d="M337,609.25c10.48-51.08,44.58-95.11,94.05-112.62,49.21-17.41,103.15-15.08,152-33.85,79.83-30.66,128-115.65,123.74-199.57C702.2,172.28,633.36,106.06,545,93.1,315.1,59.34,100.05,258.49,90.84,483.47q-.34,8.26-.34,16.53c0,214.75,165.31,390.88,375.62,408.11C382.76,825.82,313.1,725.93,337,609.25ZM500,246a42.5,42.5,0,1,1-42.5,42.5A42.5,42.5,0,0,1,500,246Z"/><circle class="cls-1" cx="500" cy="711.5" r="42.5"/></svg>
+
+	</div>
+
+
+</body>
+</html>
