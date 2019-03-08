@@ -7,12 +7,10 @@
 	
 html, body{
 	background-image:url('assets/blackhole.gif');
-	background-size: 100%;
+	background-size: contain;
 	color: white;
 	text-align: right;
-	justify-content: right;
 	font-family: silom;
-	margin-top: 2%%;
 	margin-right: 2%;
 	
 }
@@ -20,12 +18,33 @@ html, body{
 a{
 	font-size: 22px;
 	left: 4vmin;
-	color: darkblue;
+	color: #1f4d96;
+	/*text-shadow: 2px 2px 4px #1f4d96;*/
+}
+
+li{
+	animation: stomp .9s infinite;
+	list-style: none;
+}
+
+h1{
+	animation: stomp .9s infinite;
+	color: #5b94ea;
+}
+
+h2{
+	animation: stomp .9s infinite;
+	color: #3f72c1;
 }
 
 img{
 	margin: auto;
 }
+
+
+@keyframes stomp{
+	50%{transform: translate(0,.5vmin);}
+	100%{transform: initial;}	
 
 
 </style>
