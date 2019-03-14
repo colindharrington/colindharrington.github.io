@@ -1,17 +1,12 @@
+console.log("m");
+
+var $ = jQuery;
+
 $(function() {
-  // Your interactions go here
+	// Your interactions go here
 
-
-$('.title').click(function(){
-
-	(int)(Math.random() * 4)
-
-	console.log('i clicked it');
-
-$('.box').toggleClass('active');
-});
-
-
-
-
-});
+	$(".title").on("click", function() {
+		var randomNumber = Math.floor(Math.random() * 5);;
+	    $(".box").eq(randomNumber).css("background", "blue");
+	}); 
+}); 
