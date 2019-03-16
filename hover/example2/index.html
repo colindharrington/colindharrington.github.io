@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+
+body,html{
+	background: linear-gradient(45deg,grey,black);
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	height: 7vmin;
+	background-color: black;
+	top: 0%;
+	left: 0vmin;
+	z-index: 1;
+}
+
+.header2:hover{
+	z-index: 1;
+	animation: bigheader .5s forwards;
+}
+.header2{
+	position: fixed;
+	width: 100%;
+	height: 7vmin;
+	background-color: grey;
+	top: 7vmin;
+	left: 0vmin;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.options{
+	font-family: arial;
+	font-weight: bolder;
+	cursor: pointer;
+}
+	
+.circle{
+	width: 20vmin;
+	height: 20vmin;
+	background-color: lightgrey;
+	border:1vmin solid grey;
+	margin: 3vmin;
+	border-radius: 50vmin;
+	animation: wiggle 1s infinite;
+	animation-direction: alternate;
+	animation-delay: .5s;
+}
+
+.circleorg{
+	margin-top: -75vmin;
+	margin-left: 65%;
+}
+
+.circle:hover{
+	animation: stretch .5s forwards;
+	cursor: pointer;
+	border-radius: 1vmin;
+	transition: border-radius .7s;
+	z-index: 1;
+/*	margin-top: 10vmin;
+	margin-bottom: 10vmin;
+	transition: margin 1s;*/
+}
+
+.box{
+	width: 20vmin;
+	height: 20vmin;
+	background-color: lightgrey;
+	border:1vmin solid black;
+	margin: 3vmin;	animation: wiggle 1s infinite;
+	animation-direction: alternate;
+}
+
+.boxorg{
+	margin-top: 20vmin;
+	margin-left: 5%;
+}
+
+.box:hover{
+	animation: stretch .5s forwards;
+	height:30vmin;
+	transition-delay: height 1s;
+	transition: height .5s;
+	cursor: pointer;
+/*	margin-top: 10vmin;
+	margin-bottom: 10vmin;
+	transition: margin 1s;*/
+}
+
+@keyframes stretch{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.4);
+  }
+}
+
+@keyframes stretchX{
+  0%{
+    transform: scaleX(1);
+  }
+  100%{
+    transform: scaleX(1.5);
+  }
+}
+
+@keyframes bigheader{
+  0%{
+    transform: scaleY(1);
+  }
+  100%{
+    transform: scaleY(2);
+  }
+}
+
+@keyframes wiggle{
+  0%{
+    transform: translateY(0vmin);
+  }
+  100%{
+    transform: translateY(1vmin);
+  }
+}
+
+
+
+</style>
+<body>
+
+<div class="header"></div>
+<div class="header2">
+	<div class="options">Clothes</div>
+	<div class="options">Bags</div>
+	<div class="options">Accessories</div>
+</div>
+
+<div class="boxorg">
+	<div class= "box"></div>
+	<div class= "box"></div>
+	<div class= "box"></div>
+</div>
+
+<div class="circleorg">
+	<div class= "circle"></div>
+	<div class= "circle"></div>
+	<div class= "circle"></div>
+	<div class= "circle"></div>
+	<div class= "circle"></div>
+	<div class= "circle"></div>	
+</div>
+
+
+</body>
+</html>
