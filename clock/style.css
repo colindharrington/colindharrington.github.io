@@ -1,0 +1,13 @@
+/* Your styles go here */
+.clock-part {
+  height: 20px;
+  width: 25px;
+  background: lightblue;
+  margin:auto;
+}
+
+
+body{
+	display: flex;
+	background-image: url(rain.gif);
+}
