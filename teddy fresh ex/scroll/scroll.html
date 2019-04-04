@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+
+body{
+	background-image: linear-gradient(to right, white, black)
+}
+
+/*
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;*/
+	
+.wrapper {
+  margin:auto;
+  margin-top: 10%;
+  width:70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
+}
+* {box-sizing: border-box;}
+
+.wrapper {
+  grid-column-gap: 10px;
+  grid-row-gap: 1em;
+  padding: 2vmin;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: none;
+}
+
+.wrapper > div {
+  border: 2px solid darkgrey;
+  border-radius: 5px;
+  background-color: white;
+  padding: 1em;
+  color: #d9480f;
+}
+
+div.bleh img {
+	margin-top: -2vmin;
+    flex-shrink:0;
+    min-width:100%;
+    min-height:100%
+}
+
+
+@keyframes wiggle{
+  0%{
+    transform: translateY(0vmin);
+  }
+  100%{
+    transform: translateY(1vmin);
+  }
+}
+
+@keyframes stretch{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.8);
+  }
+}
+
+.bleh{
+	height: 20vmax;
+	animation: wiggle 1s infinite;
+	animation-direction: alternate;
+	animation-delay: .5s;
+	box-shadow:0px 0px 8px black;  
+
+}
+
+h6{
+	font-size: 10px;
+	font-family: helvetica;
+	font-weight: lighter;
+	text-align: center;
+	color: black;
+	margin-top: -.5vmin;
+}
+
+h6:hover{
+		transition-duration: .5s;
+		mix-blend-mode: difference;
+	}
+
+.bleh:hover{
+	animation: stretch .5s forwards;
+	cursor: pointer;
+	z-index: 1;
+	border-color: black;
+	mix-blend-mode: difference;
+	box-shadow:0px 0px 40px black;  
+	transition-duration: 1s;
+}
+
+img{
+	justify-content: center;
+	align-items: center;
+	height: 20vmin;
+}
+
+.submenu{display:none;
+margin-top: 10vmin;
+margin-left: 10vmin;
+height:10vmin;
+background-color:blue;
+padding:1vmin;
+width:50%;
+border-radius: 15px;
+}
+
+#menu{
+	position: fixed;
+}
+
+
+#auctions{
+	position: fixed;
+	cursor: pointer;
+	margin-left: 5vmin;}
+
+p{
+	font-family: arial;
+	font-size: 30px;
+	background-color: lightgrey;
+	padding: 2vmin;
+	border-radius: 15px;
+	color: grey;
+}
+
+
+.social1{
+	position: fixed;
+	height: 5vmin;
+	width: 5vmin;
+	background-color: lightgrey;
+	z-index: 1;
+	margin-left: 85%;
+	border-radius: 50px;
+	margin-top: 5%;
+}
+
+
+
+.social2{
+	position: fixed;
+	height: 5vmin;
+	width: 5vmin;
+	background-color: lightgrey;
+	z-index: 1;
+	margin-left: 85%;
+	border-radius: 50px;
+	margin-top: 15%;
+}
+
+.social3{
+	position: fixed;
+	height: 5vmin;
+	width: 5vmin;
+	background-color: lightgrey;
+	z-index: 1;
+	margin-left: 85%;
+	border-radius: 50px;
+	margin-top: 25%;
+
+}
+
+.social1:hover{
+		animation: stretch .5s forwards;
+		border-radius: 0px;
+		transition-duration: .5s;
+}
+
+.social2:hover{
+		animation: stretch .5s forwards;
+		border-radius: 0px;
+		transition-duration: .5s;
+}
+
+.social3:hover{
+		animation: stretch .5s forwards;
+		border-radius: 0px;
+		transition-duration: .5s;
+}
+
+
+</style>
+<body>
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout -->
+<div id="menu">
+<div id="auctions"><p>Menu</p></div>
+<br><br><br>
+<div class="submenu">Submenu 1</div>
+<div class="submenu">Submenu 2</div>
+<div class="submenu">Submenu 3</div>
+</div>
+
+<div class="social1"></div>
+<div class="social2"></div>
+<div class="social3"></div>
+
+<div class="wrapper">
+<!--   <div class="bleh" ><img src="assets/A1.jpg"></div> -->
+  <div class="bleh" >
+  		<h6>Anyone can be a successful artist if they just put the time and effort into it. There is no such thing as talent, only hard work.What changed my mind: Art school. There were quite a few people that tried hard, but just weren't able to achieve professional level art.
+  		</h6>
+  </div>
+  <div class="bleh" >
+		<h6>Smart phones. I thought they'd be a fad and that phones with buttons would be around for ever. But, I was wrong.
+  		</h6>
+  </div>
+  <div class="bleh" >
+  	<h6>I used to believe that the lady who burned herself with McDonald's coffee deserved every bit of her pain. Then I learned the truth of the lawsuit by reading up on it, and did a complete 180°.
+  	</h6>
+  </div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+</div>
+
+
+
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

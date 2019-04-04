@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+
+body{
+/*	background-image: linear-gradient(to right, white, black)*/
+	background-color: #727eb6;
+}
+
+/*
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;*/
+	
+.wrapper {
+  margin:auto;
+  margin-top: 5%;
+  margin-left: 28%;
+  width:67%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 12em;
+  row-gap: 1em;
+}
+* {box-sizing: border-box;}
+
+.wrapper {
+  grid-column-gap: 3vmin;
+  grid-row-gap: 3vmin;
+  padding: 2vmin;
+  background-color: none;
+}
+
+.wrapper > div {
+  border: 2px solid #f2eb83;
+  border-radius: 5px;
+  background-color: white;
+  padding: 1em;
+  color: #d9480f;
+}
+
+div.bleh img {
+	margin-top: -1vmin;
+    flex-shrink:0;
+    min-width:100%;
+    min-height:100%
+}
+
+
+@keyframes wiggle{
+  0%{
+    transform: translateY(0vmin);
+  }
+  100%{
+    transform: translateY(1vmin);
+  }
+}
+
+@keyframes stretch{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.8);
+  }
+}
+
+.bleh{
+	height: 15vmax;
+	width: 15vmax;
+	animation: wiggle 1s infinite;
+	animation-direction: alternate;
+	animation-delay: .5s;
+	box-shadow:0px 0px 8px black;  
+
+}
+
+h6{
+	font-size: 10px;
+	font-family: helvetica;
+	font-weight: lighter;
+	text-align: center;
+	color: black;
+	margin-top: -.5vmin;
+}
+
+h6:hover{
+		transition-duration: .5s;
+	}
+
+.bleh:hover{
+	animation: stretch .5s forwards;
+	cursor: pointer;
+	z-index: 1;
+	border-color: black;
+	box-shadow:0px 0px 40px black;  
+	transition-duration: 1s;
+}
+
+img{
+	justify-content: center;
+	align-items: center;
+}
+
+.shopimg{
+	margin-left: -1.5vmin;
+	margin-top: 3vmin;
+	height: 25vmin;
+}
+
+.submenu{display:none;
+margin-top: 10vmin;
+margin-left: 10vmin;
+height:5vmin;
+width: 20vmin;
+background-color:#f2eb83;
+padding:.5vmin;
+border-radius: 15px;
+}
+
+#menu{
+	position: fixed;
+	margin-top: -7vmin;
+}
+
+
+#auctions{
+	position: fixed;
+	cursor: pointer;
+	margin-left: 5vmin;}
+
+p{
+	font-family: arial;
+	font-size: 30px;
+	background-color: #f2eb83;
+	padding: 2vmin;
+	border-radius: 15px;
+	color: #727eb6;
+}
+
+
+.social1{
+	position: fixed;
+	height: 7vmin;
+	width: 7vmin;
+	background-color: black;
+	z-index: 1;
+	margin-left: 5%;
+	border-radius: 50px;
+	margin-top: 30%;
+}
+
+
+
+.social2{
+	position: fixed;
+	height: 7vmin;
+	width: 7vmin;
+	background-color: black;
+	z-index: 1;
+	margin-left: 5%;
+	border-radius: 50px;
+	margin-top: 36%;
+}
+
+.social3{
+	position: fixed;
+	height: 7vmin;
+	width: 7vmin;
+	background-color: black;
+	z-index: 1;
+	margin-left: 5%;
+	border-radius: 50px;
+	margin-top: 42%;
+
+}
+
+.social1:hover{
+		animation: stretch .5s forwards;
+		border-radius: 10px;
+		transition-duration: .5s;
+}
+
+.social2:hover{
+		animation: stretch .5s forwards;
+		border-radius: 10px;
+		transition-duration: .5s;
+}
+
+.social3:hover{
+		animation: stretch .5s forwards;
+		border-radius: 10px;
+		transition-duration: .5s;
+}
+
+
+.socialsvg1{
+	height: 5vmin;
+	margin-top: 1vmin;
+	margin-left: 2.1vmin;
+	stroke-dasharray: 10;
+	fill: black;
+	stroke: #f2eb83;
+	stroke-width:5;
+	animation: ants 1s linear infinite;
+}
+.socialsvg2{
+	height: 20vmin;
+	margin-top: 1.5vmin;
+	margin-left: 1.3vmin;
+	stroke-dasharray: 2;
+	fill: black;
+	stroke: #f2eb83;
+	stroke-width:1;
+	animation: ants 5s linear infinite;
+}
+.socialsvg3{
+	height: 5vmin;
+	margin-top: 1.3vmin;
+	stroke-dasharray: 30;
+	fill: black;
+	stroke: #f2eb83;
+	stroke-width:10;
+	animation: ants 1s linear infinite;
+}
+/*----------------------------------------------*/
+#letter-path{
+	stroke-dasharray: 20;
+	fill: white;
+	stroke: black;
+	stroke-width:10;
+	animation: ants 2s linear infinite;
+}
+
+@keyframes ants{
+	100%{
+		stroke-dashoffset:40px;
+	}
+}
+
+.mainlogo{
+	position: fixed;
+	margin-top: 10%;
+	margin-left: 4%;
+	opacity: .5;
+	z-index: -1;
+}
+
+</style>
+<body>
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout -->
+<div id="menu">
+<div id="auctions"><p>Menu</p></div>
+<br><br><br>
+<div class="submenu">Submenu 1</div>
+<div class="submenu">Submenu 2</div>
+<div class="submenu">Submenu 3</div>
+</div>
+
+<a href="https://www.facebook.com/TeddyFreshOfficial/">
+	<div class="social1">
+		<svg class="socialsvg1" width="19.47" height="37.5" viewBox="88.428 12.828 107.543 207.085"><path d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z" /></svg>
+		</svg>
+	</div>
+</a>
+
+<a href="https://www.instagram.com/teddyfreshofficial/">
+<div class="social2">
+	<svg class="socialsvg2" width="217" height="5" viewBox="90 5 107.543 207.085"><path d="M48.1,26.3c0,4.3,0,7.2-0.1,8.8c-0.2,3.9-1.3,6.9-3.5,9s-5.1,3.3-9,3.5c-1.6,0.1-4.6,0.1-8.8,0.1c-4.3,0-7.2,0-8.8-0.1
+		c-3.9-0.2-6.9-1.3-9-3.5c-2.1-2.1-3.3-5.1-3.5-9c-0.1-1.6-0.1-4.6-0.1-8.8s0-7.2,0.1-8.8c0.2-3.9,1.3-6.9,3.5-9
+		c2.1-2.1,5.1-3.3,9-3.5c1.6-0.1,4.6-0.1,8.8-0.1c4.3,0,7.2,0,8.8,0.1c3.9,0.2,6.9,1.3,9,3.5s3.3,5.1,3.5,9
+		C48,19.1,48.1,22,48.1,26.3z M28.8,8.7c-1.3,0-2,0-2.1,0c-0.1,0-0.8,0-2.1,0c-1.3,0-2.3,0-2.9,0c-0.7,0-1.6,0-2.7,0.1
+		c-1.1,0-2.1,0.1-2.9,0.3c-0.8,0.1-1.5,0.3-2,0.5c-0.9,0.4-1.7,0.9-2.5,1.6c-0.7,0.7-1.2,1.5-1.6,2.5c-0.2,0.5-0.4,1.2-0.5,2
+		s-0.2,1.7-0.3,2.9c0,1.1-0.1,2-0.1,2.7c0,0.7,0,1.7,0,2.9c0,1.3,0,2,0,2.1s0,0.8,0,2.1c0,1.3,0,2.3,0,2.9c0,0.7,0,1.6,0.1,2.7
+		c0,1.1,0.1,2.1,0.3,2.9s0.3,1.5,0.5,2c0.4,0.9,0.9,1.7,1.6,2.5c0.7,0.7,1.5,1.2,2.5,1.6c0.5,0.2,1.2,0.4,2,0.5
+		c0.8,0.1,1.7,0.2,2.9,0.3s2,0.1,2.7,0.1c0.7,0,1.7,0,2.9,0c1.3,0,2,0,2.1,0c0.1,0,0.8,0,2.1,0c1.3,0,2.3,0,2.9,0
+		c0.7,0,1.6,0,2.7-0.1c1.1,0,2.1-0.1,2.9-0.3c0.8-0.1,1.5-0.3,2-0.5c0.9-0.4,1.7-0.9,2.5-1.6c0.7-0.7,1.2-1.5,1.6-2.5
+		c0.2-0.5,0.4-1.2,0.5-2c0.1-0.8,0.2-1.7,0.3-2.9c0-1.1,0.1-2,0.1-2.7c0-0.7,0-1.7,0-2.9c0-1.3,0-2,0-2.1s0-0.8,0-2.1
+		c0-1.3,0-2.3,0-2.9c0-0.7,0-1.6-0.1-2.7c0-1.1-0.1-2.1-0.3-2.9c-0.1-0.8-0.3-1.5-0.5-2c-0.4-0.9-0.9-1.7-1.6-2.5
+		c-0.7-0.7-1.5-1.2-2.5-1.6c-0.5-0.2-1.2-0.4-2-0.5c-0.8-0.1-1.7-0.2-2.9-0.3c-1.1,0-2-0.1-2.7-0.1C31.1,8.7,30.1,8.7,28.8,8.7z
+		 M34.4,18.5c2.1,2.1,3.2,4.7,3.2,7.8s-1.1,5.6-3.2,7.8c-2.1,2.1-4.7,3.2-7.8,3.2c-3.1,0-5.6-1.1-7.8-3.2c-2.1-2.1-3.2-4.7-3.2-7.8
+		s1.1-5.6,3.2-7.8c2.1-2.1,4.7-3.2,7.8-3.2C29.7,15.3,32.3,16.3,34.4,18.5z M31.7,31.3c1.4-1.4,2.1-3.1,2.1-5s-0.7-3.7-2.1-5.1
+		c-1.4-1.4-3.1-2.1-5.1-2.1c-2,0-3.7,0.7-5.1,2.1s-2.1,3.1-2.1,5.1s0.7,3.7,2.1,5c1.4,1.4,3.1,2.1,5.1,2.1
+		C28.6,33.4,30.3,32.7,31.7,31.3z M39.9,13c0.5,0.5,0.8,1.1,0.8,1.8c0,0.7-0.3,1.3-0.8,1.8c-0.5,0.5-1.1,0.8-1.8,0.8
+		s-1.3-0.3-1.8-0.8c-0.5-0.5-0.8-1.1-0.8-1.8c0-0.7,0.3-1.3,0.8-1.8c0.5-0.5,1.1-0.8,1.8-0.8S39.4,12.5,39.9,13z" /></svg>
+	</svg>
+</div>
+</a>
+
+<a href="https://twitter.com/teddyfresh">
+<div class="social3">
+	<svg class="socialsvg3" width="300.00006" height="244.18703" viewBox="1850 30 612 612"><path d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+			c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+			c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+			c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+			c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+			c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+			c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" /></svg>
+	</svg>
+</div>
+</a>
+
+<img class="mainlogo" src="assets/logos/bear.png">
+
+<div class="wrapper">
+  <div class="bleh" >
+  	<img class="shopimg" src="assets/items/hoodie1.jpg">
+  </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/hoodie2.jpg">
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/hoodie3.jpg">
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/zip1.jpg">
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/tee1.jpg">
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/tee2.jpg">
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/tee3.jpg">
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/tee4.jpg">
+    </div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+</div>
+
+
+
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -2,190 +2,97 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
 </head>
-<style>
-
-body{
-	background-color: #727eb6;
-}
-	
-.wrapper {
-  margin:auto;
-  margin-top: 10%;
-  width:50%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 10px;
-  row-gap: 1em;
-}
-* {box-sizing: border-box;}
-
-.wrapper {
-  grid-column-gap: 10px;
-  grid-row-gap: 1em;
-  padding: 2vmin;
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: #f2eb83;
-}
-
-.wrapper > div {
-  border: 2px solid #727eb6;
-  border-radius: 5px;
-  background-color: white;
-  padding: 1em;
-  color: #d9480f;
-}
-
-div.bleh img {
-	margin-top: -2vmin;
-    flex-shrink:0;
-    min-width:100%;
-    min-height:100%
-}
-
-
-@keyframes wiggle{
-  0%{
-    transform: translateY(0vmin);
-  }
-  100%{
-    transform: translateY(1vmin);
-  }
-}
-
-@keyframes stretch{
-  0%{
-    transform: scale(1);
-  }
-  100%{
-    transform: scale(1.8);
-  }
-}
-
-.bleh{
-	height: 15vmax;
-	animation: wiggle 1s infinite;
-	animation-direction: alternate;
-	animation-delay: .5s;
-}
-
-.bleh:hover{
-	animation: stretch .5s forwards;
-	cursor: pointer;
-	z-index: 1;
-	border-color: black;
-}
-
-img{
-	justify-content: center;
-	align-items: center;
-	height: 20vmin;
-}
-
-.submenu{display:none;
-margin-top: 10vmin;
-margin-left: 10vmin;
-height:10vmin;
-background-color:blue;
-padding:1vmin;
-width:50%;
-border-radius: 15px;
-}
-
-#menu{
-	position: fixed;
-}
-
-#auctions{
-	position: fixed;
-	cursor: pointer;
-	margin-left: 5vmin;}
-
-p{
-	font-family: arial;
-	font-size: 30px;
-	background-color: lightgrey;
-	padding: 2vmin;
-	border-radius: 15px;
-}
-
-
-.social1{
-	position: fixed;
-	height: 10vmin;
-	width: 10vmin;
-	background-color: lightgrey;
-	z-index: 1;
-	margin-left: 85%;
-	border-radius: 50px;
-	margin-top: 5%;
-}
-
-.social2{
-	position: fixed;
-	height: 10vmin;
-	width: 10vmin;
-	background-color: lightgrey;
-	z-index: 1;
-	margin-left: 85%;
-	border-radius: 50px;
-	margin-top: 15%;
-}
-
-.social3{
-	position: fixed;
-	height: 10vmin;
-	width: 10vmin;
-	background-color: lightgrey;
-	z-index: 1;
-	margin-left: 85%;
-	border-radius: 50px;
-	margin-top: 25%;
-}
-
-
-</style>
 <body>
-<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout -->
-<div id="menu">
-<div id="auctions"><p>Menu</p></div>
-<br><br><br>
-<div class="submenu">Submenu 1</div>
-<div class="submenu">Submenu 2</div>
-<div class="submenu">Submenu 3</div>
-</div>
 
-<div class="social1"></div>
-<div class="social2"></div>
-<div class="social3"></div>
 
 <div class="wrapper">
-<!--   <div class="bleh" ><img src="assets/A1.jpg"></div> -->
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
+
+  <div class="bleh">
+  	  		<div class="griditem1text"><h2>Anyone can be a successful artist if they just put the time and effort into it. There is no such thing as talent, only hard work.What changed my mind: Art school. There were quite a few people that tried hard, but just weren't able to achieve professional level art.</h2></div> 	
+  	<img class="griditem1"src="assets/brush.png"> 
+  </div>
+
+
+  <div class="bleh" >
+        <div class="griditem1text"><h2>Smart phones. I thought they'd be a fad and that phones with buttons would be around for ever. But, I was wrong.</h2></div>
+  	<img class="griditem2"src="assets/iphone.jpg">
+  </div>
+
+
+  <div class="bleh" >
+          <div class="griditem1text"><h2>I used to believe that the lady who burned herself with McDonald's coffee deserved every bit of her pain. Then I learned the truth of the lawsuit by reading up on it, and did a complete 180°.</h2>
+  </div>
+  	<img class="griditem3"src="assets/coffee.png">  
+  </div>
+
+
+  <div class="bleh">
+          <div class="griditem1text"><h2>I used to think that being cynical/negative was realistic and somehow smarter than being positive. I've since realized that a "be prepared for the worst but expect the best" is far better. We can't control the outcome of anything in life. Being negative makes you miserable rather than protected from bad things happening.</h2></div>  
+    <img class="griditem1"src="assets/arrow.png"> 
+  </div>
+
+
+  <div class="bleh" >
+        <div class="griditem1text"><h2>I could go through life and could seek meaningful advice from my Dad who has always been there for me.
+        Now he has been reduced to a feeble condition, I am starting to understand I'm out there on my own, and even what he's sure of is suspect given his mental and physical facilities have been rapidly deteriorating in his late seventies. I feel horrible that I have noticed this long before he did - or at least admitted as much.</h2></div>
+    <img class="griditem3"src="assets/man.gif">
+  </div>
+
+
+  <div class="bleh" >
+          <div class="griditem1text"><h2>That the catholic church was responsible for all of the hateful people in it, I did a CMV on the topic and someone explained it very nicely to me. Basically, the hateful people use the church as an excuse, if you remove the church they will gladly find another excuse.</h2>
+  </div>
+    <img class="griditem1"src="assets/cross.png">  
+  </div>
+
+
+  <div class="bleh">
+          <div class="griditem1text"><h2>I used to be a strict, hardline atheist. I was the kind of bastard that would bring the subject up for no reason, just to argue. I don't know what the hell my problem was. Now I feel like, the universe is big, I don't know what all might be out there, I don't really care. I live as if there is no afterlife, because that makes sense to me. But if you don't, and you believe in one, that's perfectly fine, and maybe you're right. Who knows?</h2></div>  
+    <img class="griditem1"src="assets/earth.png"> 
+  </div>
+
+
+  <div class="bleh" >
+        <div class="griditem1text"><h2>I was once completely against religion as a whole.
+
+        Then I watched Jesus Christ Superstar.</h2></div>
+    <img class="griditem3"src="assets/dance.jpeg">
+  </div>
+
+
+  <div class="bleh" >
+          <div class="griditem1text"><h2>I used to be extremely anti-abortion. My mom would take me to pro-life rallies and protests, and I even wore shirts that said "abortion is murder". As I got older and lost religion I realized that abortion is absolutely necessary. Then I got pregnant and had a kid. It solidified things for me. No one should be forced to go through pregnancy and motherhood if they don't want to.</h2>
+  </div>
+    <img class="griditem1"src="assets/baby.png">  
+  </div>
+
+
+  <div class="bleh">
+          <div class="griditem1text"><h2>I used to be a conspiracy theorist. Believed that 9/11 was committed by the US government and that we never landed on the moon.
+
+          Once I started looking outside of the echo chamber I was in and started looking at alternate exlanations, theories and listening to different viewpoints I soon realised how ridicuous those notions were.</h2></div>  
+    <img class="griditem1"src="assets/building.png"> 
+  </div>
+
+
+  <div class="bleh" >
+        <div class="griditem1text"><h2>I used to think people on welfare and state assistance just weren't trying hard enough. I grew up spoiled and entitled and it seemed like any kind of charity was a stigma.
+
+        Then, my husband became chronically ill, and the economy took a shit. My family has been close to homelessness more than once, and have relied on state insurance and assistance off and on throughout the past few years. There are definitely people out there who abuse the system, but some just get stuck in a horrible cycle of poverty.</h2></div>
+    <img class="griditem1"src="assets/stamp.png">
+  </div>
+
+
+  <div class="bleh" >
+          <div class="griditem1text"><h2>"All taxation is theft, man! I made my money without any help from public institutions or the infrastructure they support, I should be able to keep every last dime of it!"
+
+          Naturally that was when I was 18, living at home rent free, and working at Pizza Hut as a delivery driver who relied upon public roads for pretty much every cent I made.</h2>
+  </div>
+    <img class="griditem1"src="assets/form.png">  
+  </div>
+
 </div>
 
 
