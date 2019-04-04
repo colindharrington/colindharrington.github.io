@@ -68,7 +68,18 @@ div.bleh img {
   }
 }
 
+
+@keyframes unhide{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .bleh{
+	display: block;
 	height: 15vmax;
 	width: 15vmax;
 	animation: wiggle 1s infinite;
@@ -249,9 +260,30 @@ p{
 	z-index: -1;
 }
 
+.backhider{
+	height: 26.9vmin;
+	background-color: black;
+	margin-left: -2.2vmin;
+	border-radius: 5px;
+	border:2px solid black;
+}
+
+.divhider{
+	display: none;
+	height: 15vmax;
+	width: 15vmax;
+}
+
+img:hover + .divhider{
+	display: inline;
+	animation: unhide 1s forwards;
+}
+
+
+
 </style>
 <body>
-<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout -->
+
 <div id="menu">
 <div id="auctions"><p>Menu</p></div>
 <br><br><br>
@@ -306,34 +338,87 @@ p{
 <img class="mainlogo" src="assets/logos/bear.png">
 
 <div class="wrapper">
+  
+
   <div class="bleh" >
-  	<img class="shopimg" src="assets/items/hoodie1.jpg">
+  		<img class="shopimg" src="assets/items/hoodie1.jpg">
+			<div class="divhider">
+				<img class="backhider"src="assets/items/hoodie1back.jpg">
+			</div>
   </div>
+
   <div class="bleh" >
     	<img class="shopimg" src="assets/items/hoodie2.jpg">
-    </div>
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/hoodie2back.jpg">
+  			</div>
+  </div>
+
+
+
+
   <div class="bleh" >
     	<img class="shopimg" src="assets/items/hoodie3.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/hoodie3back.jpg">
+  			</div>
     </div>
   <div class="bleh" >
     	<img class="shopimg" src="assets/items/zip1.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/zip1back.jpg">
+  			</div>
+    </div>
+ <div class="bleh" >
+  	<img class="shopimg" src="assets/items/wind1.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/wind1back.jpg">
+  			</div>
+  </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/wind2.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/wind2back.jpg">
+  			</div>
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/zip2.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/zip2back.jpg">
+  			</div>
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/zip3.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/zip3back.jpg">
+  			</div>
     </div>
   <div class="bleh" >
     	<img class="shopimg" src="assets/items/tee1.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/tee1back.jpg">
+  			</div>
     </div>
   <div class="bleh" >
     	<img class="shopimg" src="assets/items/tee2.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/tee2back.jpg">
+  			</div>
     </div>
   <div class="bleh" >
     	<img class="shopimg" src="assets/items/tee3.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/tee3back.jpg">
+  			</div>
     </div>
   <div class="bleh" >
     	<img class="shopimg" src="assets/items/tee4.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/tee4back.jpg">
+  			</div>
     </div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
-  <div class="bleh" ></div>
+
+
   <div class="bleh" ></div>
   <div class="bleh" ></div>
   <div class="bleh" ></div>
