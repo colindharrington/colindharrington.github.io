@@ -81,7 +81,7 @@ h6:hover{
 
 .bleh:hover{
 	animation: stretch .5s forwards;
-	cursor: pointer;
+	cursor: default;
 	z-index: 1;
 	border-color: black;
 	mix-blend-mode: difference;
@@ -107,7 +107,7 @@ border-radius: 15px;
 
 #auctions{
 	position: fixed;
-	cursor: pointer;
+	cursor: default;
 	margin-left: 5vmin;}
 
 p{
