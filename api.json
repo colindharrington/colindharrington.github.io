@@ -1,20 +1,25 @@
 
 {
-  "adjective1": "",
-  "adjective2": "",
-  "artSupply": "",
-  "computerSoftware": "",
-  "websiteName": "",
-  "artistName": "",
-  "celebrityName": "",
-  "noun1": "",
-  "noun2": "",
-  "pluralNoun1": "",
-  "pluralNoun2": "",
-  "pluralNoun3": "",
-  "verbEndingInIng": "",
-  "placeInNewYork": "",
-  "bodyPart": "",
-  "numbers": [],
-  "foods": []
+  "adjective1": "happy",
+  "adjective2": "quiet",
+  "artSupply": "saw",
+  "computerSoftware": "photoshop",
+  "websiteName": "craigslist",
+  "artistName": "space invader",
+  "celebrityName": "Jesus",
+  "noun1": "grass",
+  "noun2": "box",
+  "pluralNoun1": "clothes",
+  "pluralNoun2": "llamas",
+  "pluralNoun3": "cities",
+  "verbEndingInIng": "sleeping",
+  "placeInNewYork": "China town",
+  "bodyPart": "eye",
+  "numbers": [6,6,6,],
+  "foods": [
+  		"pizza"
+  		"udon"
+  		"pasta"
+  		"sandwich"
+  ]
 }
