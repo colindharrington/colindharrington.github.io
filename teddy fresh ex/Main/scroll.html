@@ -7,7 +7,8 @@
 
 body{
 /*	background-image: linear-gradient(to right, white, black)*/
-	background-color: #727eb6;
+	/*background-color: #727eb6;*/
+	background-image: url(assets/background.jpg);
 }
 
 /*
@@ -18,7 +19,7 @@ body{
 .wrapper {
   margin:auto;
   margin-top: 5%;
-  margin-left: 28%;
+  margin-left: 25%;
   width:67%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -69,14 +70,17 @@ div.bleh img {
 }
 
 
-@keyframes unhide{
+
+
+@keyframes slide{
   0%{
-    opacity: 0;
+    transform: translateY(-12em);
   }
   100%{
-    opacity: 1;
+    transform: translateY(2.3em);
   }
 }
+
 
 .bleh{
 	display: block;
@@ -85,8 +89,7 @@ div.bleh img {
 	animation: wiggle 1s infinite;
 	animation-direction: alternate;
 	animation-delay: .5s;
-	box-shadow:0px 0px 8px black;  
-
+	box-shadow:0px 0px 8px black;
 }
 
 h6{
@@ -108,7 +111,7 @@ h6:hover{
 	z-index: 1;
 	border-color: black;
 	box-shadow:0px 0px 40px black;  
-	transition-duration: 1s;
+	/*transition-duration: 1s;*/
 }
 
 img{
@@ -117,9 +120,8 @@ img{
 }
 
 .shopimg{
-	margin-left: -1.5vmin;
-	margin-top: 3vmin;
-	height: 27%;
+	margin-left: 0vmin;
+	height: 7vmin;
 }
 
 .submenu{display:none;
@@ -262,24 +264,19 @@ p{
 
 .backhider{
 	height: 26.9vmin;
-	background-color: black;
 	margin-left: -2.2vmin;
 	border-radius: 5px;
 	border:2px solid black;
+	animation: slide .8s forwards;	
 }
 
 .divhider{
 	display: none;
-	height: 15vmax;
-	width: 15vmax;
 }
 
 img:hover + .divhider{
-	display: inline;
-	animation: unhide 1s forwards;
+	display: inline-block;
 }
-
-
 
 </style>
 <body>
@@ -372,7 +369,7 @@ img:hover + .divhider{
  <div class="bleh" >
   	<img class="shopimg" src="assets/items/wind1.jpg">
   			<div class="divhider">
-  				<img class="backhider"src="assets/items/wind1back.jpg">
+  				<img class="backhider" class="behind"src="assets/items/wind1back.jpg">
   			</div>
   </div>
   <div class="bleh" >

@@ -58,6 +58,18 @@ html {
   }
 }
 
+@keyframes unhidealt{
+  0%{
+    translate: margin-top(-40%);
+  }
+  100%{
+    transform: margin-top(40%);
+  }
+}
+
+}
+
+
 .bleh{
 	height: 20vmax;
 	animation: wiggle 1s infinite;
