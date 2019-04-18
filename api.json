@@ -1,4 +1,3 @@
-
 {
   "adjective1": "happy",
   "adjective2": "quiet",
@@ -17,9 +16,9 @@
   "bodyPart": "eye",
   "numbers": [6,6,6,],
   "foods": [
-  		"pizza"
-  		"udon"
-  		"pasta"
-  		"sandwich"
+  		"pizza",
+  		"udon",
+  		"pasta",
+  		"sandwich",
   ]
 }
