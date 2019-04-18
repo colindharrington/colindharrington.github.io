@@ -14,11 +14,11 @@
   "verbEndingInIng": "sleeping",
   "placeInNewYork": "China town",
   "bodyPart": "eye",
-  "numbers": [6,6,6,],
+  "numbers": [6,6,6],
   "foods": [
   		"pizza",
   		"udon",
   		"pasta",
-  		"sandwich",
+  		"sandwich"
   ]
 }
