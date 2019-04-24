@@ -6,30 +6,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  
-  <div id="app-display">
-  
-       <div id="location">
-       <span id="city">Loading...</span>, <span id="state"></span>
-      </div><!--End of Location-->
+  <div id ="long"></div>
+  <div id ="lat"></div>
 
-   <div id="weather">
-          <div class="row">
-             <span id="wIcon"></span>
-         </div>
-
-          <div class="row">
-           It's <span id="temp"></span>
-         </div>
-
-          <div class="row">
-         <button class="btn btn-primary" id="btnToggle">Convert C/F Temp</button>
-          </div>
-  </div><!--End of Weather-->
-    
-  </div><!--End of App Display section-->
+<div id="canvas-container" style="width: 800px; height: 300px;">
+    <canvas id="sineCanvas" style="width: 800px; height: 300px;" width="800" height="300"></canvas>
 </div>
+
+
+  
   <script src="jquery-3.2.1.min.js"></script>
   <script src="main.js"></script>
 </body>

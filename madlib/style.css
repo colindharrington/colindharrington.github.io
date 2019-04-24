@@ -2,13 +2,14 @@ body{
 	background-color: white;
 }
 
-.button{
+button{
 	border:1px solid black;
 	padding: 10px 20px;
 	display: inline-block;
 	margin: 10px;
+	cursor: pointer;
 }
 
-.button:hover{
-	mix-blend-mode: difference;
+button:hover{
+	background-color: red;
 }

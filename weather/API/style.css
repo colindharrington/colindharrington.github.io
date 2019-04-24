@@ -1,0 +1,42 @@
+body {
+  background: url("assets/earth.gif") repeat center center fixed;
+  background-size: repeat;
+}
+
+#app-display {
+  position: relative;
+  margin: auto;
+  font-family:Arial, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 35%;
+  text-shadow: 0 0 5px black;
+}
+
+
+#city, #state {
+  color: white;
+}
+
+#weather {
+ margin-top: 10px;
+}
+
+#temp {
+  color: white;
+}
+
+#btn {
+  margin-top: 10px;
+}
+
+img {
+  width: 70px;
+}
+
+
+
+a {
+  color: aqua!important;
+}
