@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+
+body{
+  background-color: darkgrey;
+}
+
+.grid {
+  margin:15vmin;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25vmin, 1fr));
+  grid-auto-rows: 1fr;
+}
+
+.grid::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.grid > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+/* Just to make the grid visible */
+
+.grid > * {
+  background: rgba(0,0,0,0.1);
+  border: 5px grey solid;
+}
+
+.imgsize{
+  max-height: 100%;
+}
+
+.imgsize2{
+  max-width: 100%;
+}
+
+.topbox{
+
+}
+.submenu{
+  display: none;
+  position: fixed;
+  top: 47%;
+  max-width: 33vmax;
+
+}
+
+
+</style>
+<body>
+<div class="grid">
+  
+  <div class="topbox">
+    <img class="imgsize" src="assets/items/hoodie1.jpg">
+  </div>
+  <div class="submenu">
+      <img class="imgsize2"src="assets/items/hoodie2.jpg">
+  </div>
+
+    <div class="topbox">
+    <img class="imgsize" src="assets/items/hoodie1.jpg">
+  </div>
+  <div class="submenu">
+      <img class="imgsize2"src="assets/items/hoodie2.jpg">
+  </div>
+  
+
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div><div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

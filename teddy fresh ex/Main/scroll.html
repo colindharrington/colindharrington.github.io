@@ -6,22 +6,46 @@
 <style>
 
 body{
-/*	background-image: linear-gradient(to right, white, black)*/
-	/*background-color: #727eb6;*/
-	background-image: url(assets/background.jpg);
+	background-color: #727eb6;
 }
 
-/*
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;*/
-	
+@keyframes wiggle{
+  0%{
+    transform: translateY(0vmin);
+  }
+  100%{
+    transform: translateY(1vmin);
+  }
+}
+
+
+#auctions{
+  position: relative;
+  cursor: pointer;
+/*  margin-left: 5vmin;
+  animation: wiggle 1s infinite;
+  animation-direction: alternate;*/
+}
+
+.submenu{
+  /*display:none;*/
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.imgsize{
+  max-width: 100%;
+  /*height:100%;*/
+}
+
+
 .wrapper {
   margin:auto;
   margin-top: 5%;
   margin-left: 25%;
   width:67%;
   display: grid;
+  /*position: relative;*/
   grid-template-columns: repeat(4, 1fr);
   column-gap: 12em;
   row-gap: 1em;
@@ -33,6 +57,7 @@ body{
   grid-row-gap: 3vmin;
   padding: 2vmin;
   background-color: none;
+  z-index: 0;
 }
 
 .wrapper > div {
@@ -43,253 +68,91 @@ body{
   color: #d9480f;
 }
 
-div.bleh img {
-	margin-top: -1vmin;
+/*div.bleh img {
+  margin-top: -1vmin;
     flex-shrink:0;
     min-width:100%;
     min-height:100%
-}
-
-
-@keyframes wiggle{
-  0%{
-    transform: translateY(0vmin);
-  }
-  100%{
-    transform: translateY(1vmin);
-  }
-}
-
-@keyframes stretch{
-  0%{
-    transform: scale(1);
-  }
-  100%{
-    transform: scale(1.8);
-  }
-}
-
-
-
-
-@keyframes slide{
-  0%{
-    transform: translateY(-12em);
-  }
-  100%{
-    transform: translateY(2.3em);
-  }
-}
-
-
+}*/
 .bleh{
-	display: block;
-	height: 15vmax;
-	width: 15vmax;
-	animation: wiggle 1s infinite;
-	animation-direction: alternate;
-	animation-delay: .5s;
-	box-shadow:0px 0px 8px black;
+  display: block;
+  height: 20vmax;
+  width: 20vmax;
+  z-index: 1;
+/*  animation: wiggle 1s infinite;
+  animation-direction: alternate;
+  animation-delay: .5s;*/
+  /*box-shadow:0px 0px 8px black;*/
 }
 
-h6{
-	font-size: 10px;
-	font-family: helvetica;
-	font-weight: lighter;
-	text-align: center;
-	color: black;
-	margin-top: -.5vmin;
-}
-
-h6:hover{
-		transition-duration: .5s;
-	}
-
+/*
 .bleh:hover{
-	animation: stretch .5s forwards;
-	cursor: pointer;
-	z-index: 1;
-	border-color: black;
-	box-shadow:0px 0px 40px black;  
-	/*transition-duration: 1s;*/
+  animation: stretch .5s forwards;
+  cursor: pointer;
+  z-index: 1;
+  border-color: black;
+  box-shadow:0px 0px 40px black;  
+}*/
+
+.testitem1{
+  z-index: 1;
 }
 
-img{
-	justify-content: center;
-	align-items: center;
+.testitem2{
+  z-index: 0;
 }
 
-.shopimg{
-	margin-left: 0vmin;
-	height: 7vmin;
-}
-
-.submenu{display:none;
-margin-top: 10vmin;
-margin-left: 10vmin;
-height:5vmin;
-width: 20vmin;
-background-color:#f2eb83;
-padding:.5vmin;
-border-radius: 15px;
-}
-
-#menu{
-	position: fixed;
-	margin-top: -7vmin;
-}
-
-
-#auctions{
-	position: fixed;
-	cursor: pointer;
-	margin-left: 5vmin;}
-
-p{
-	font-family: arial;
-	font-size: 30px;
-	background-color: #f2eb83;
-	padding: 2vmin;
-	border-radius: 15px;
-	color: #727eb6;
-}
-
-
-.social1{
-	position: fixed;
-	height: 7vmin;
-	width: 7vmin;
-	background-color: black;
-	z-index: 1;
-	margin-left: 5%;
-	border-radius: 50px;
-	margin-top: 30%;
-}
-
-
-
-.social2{
-	position: fixed;
-	height: 7vmin;
-	width: 7vmin;
-	background-color: black;
-	z-index: 1;
-	margin-left: 5%;
-	border-radius: 50px;
-	margin-top: 36%;
-}
-
-.social3{
-	position: fixed;
-	height: 7vmin;
-	width: 7vmin;
-	background-color: black;
-	z-index: 1;
-	margin-left: 5%;
-	border-radius: 50px;
-	margin-top: 42%;
-
-}
-
-.social1:hover{
-		animation: stretch .5s forwards;
-		border-radius: 10px;
-		transition-duration: .5s;
-}
-
-.social2:hover{
-		animation: stretch .5s forwards;
-		border-radius: 10px;
-		transition-duration: .5s;
-}
-
-.social3:hover{
-		animation: stretch .5s forwards;
-		border-radius: 10px;
-		transition-duration: .5s;
-}
-
-
-.socialsvg1{
-	height: 5vmin;
-	margin-top: 1vmin;
-	margin-left: 2.1vmin;
-	stroke-dasharray: 10;
-	fill: black;
-	stroke: #f2eb83;
-	stroke-width:5;
-	animation: ants 1s linear infinite;
-}
-.socialsvg2{
-	height: 20vmin;
-	margin-top: 1.5vmin;
-	margin-left: 1.3vmin;
-	stroke-dasharray: 2;
-	fill: black;
-	stroke: #f2eb83;
-	stroke-width:1;
-	animation: ants 5s linear infinite;
-}
-.socialsvg3{
-	height: 5vmin;
-	margin-top: 1.3vmin;
-	stroke-dasharray: 30;
-	fill: black;
-	stroke: #f2eb83;
-	stroke-width:10;
-	animation: ants 1s linear infinite;
-}
-/*----------------------------------------------*/
-#letter-path{
-	stroke-dasharray: 20;
-	fill: white;
-	stroke: black;
-	stroke-width:10;
-	animation: ants 2s linear infinite;
-}
-
-@keyframes ants{
-	100%{
-		stroke-dashoffset:40px;
-	}
-}
-
-.mainlogo{
-	position: fixed;
-	margin-top: 10%;
-	margin-left: 4%;
-	opacity: .5;
-	z-index: -1;
-}
-
-.backhider{
-	height: 26.9vmin;
-	margin-left: -2.2vmin;
-	border-radius: 5px;
-	border:2px solid black;
-	animation: slide .8s forwards;	
-}
-
-.divhider{
-	display: none;
-}
-
-img:hover + .divhider{
-	display: inline-block;
-}
 
 </style>
 <body>
 
-<div id="menu">
-<div id="auctions"><p>Menu</p></div>
-<br><br><br>
-<div class="submenu">Submenu 1</div>
-<div class="submenu">Submenu 2</div>
-<div class="submenu">Submenu 3</div>
+
+
+<div class="wrapper">  
+
+ <div class="bleh" class="testitem1" >
+      <div id="menu">
+        <div id="auctions">
+          <img class="imgsize" src="assets/items/hoodie1.jpg" >
+      </div>
+
+  <br><br><br>
+
+   <div class="submenu">
+      <img class="imgsize"src="assets/items/hoodie2.jpg">
+   </div>
+
+
 </div>
 
-<a href="https://www.facebook.com/TeddyFreshOfficial/">
+  </div>
+  <div class="bleh" class="testitem2"></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+<!--   <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div> -->
+</div>
+<!-- 
+	<div id="menu">
+	 <div id="auctions"><img class="imgsize" src="assets/items/hoodie1.jpg" ></div>
+	<br><br><br>
+	 <div class="submenu"><img class="imgsize"src="assets/items/hoodie2.jpg"></div>
+	</div>
+
+
+
+    <div id="menu">
+   <div id="auctions"><img class="imgsize" src="assets/items/hoodie1.jpg" ></div>
+  <br><br><br>
+   <div class="submenu"><img class="imgsize"src="assets/items/hoodie2.jpg"></div>
+  </div> -->
+
+
+
+<!-- <a href="https://www.facebook.com/TeddyFreshOfficial/">
 	<div class="social1">
 		<svg class="socialsvg1" width="19.47" height="37.5" viewBox="88.428 12.828 107.543 207.085"><path d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z" /></svg>
 		</svg>
@@ -330,11 +193,13 @@ img:hover + .divhider{
 			c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" /></svg>
 	</svg>
 </div>
-</a>
+</a> -->
 
-<img class="mainlogo" src="assets/logos/bear.png">
+<!-- <img class="mainlogo" src="assets/logos/bear.png"> -->
 
-<div class="wrapper">
+
+<!-- grid? -->
+<!-- <div class="wrapper">
   
 
   <div class="bleh" >
@@ -413,7 +278,7 @@ img:hover + .divhider{
   			<div class="divhider">
   				<img class="backhider"src="assets/items/tee4back.jpg">
   			</div>
-    </div>
+    </div> -->
 
 
   <div class="bleh" ></div>

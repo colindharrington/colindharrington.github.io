@@ -3,7 +3,9 @@ console.log("m");
 var $ = jQuery;
 
 $(function() {
-  $('#auctions').click(function() {
+  $('.bleh').hover(function() {
     $('.submenu').slideToggle();
   });
 });
+
+

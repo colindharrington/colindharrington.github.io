@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+
+	
+.wrapper {
+  margin:auto;
+  margin-top: 5%;
+  margin-left: 25%;
+  width:67%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 12em;
+  row-gap: 1em;
+}
+* {box-sizing: border-box;}
+
+.wrapper {
+  grid-column-gap: 3vmin;
+  grid-row-gap: 3vmin;
+  padding: 2vmin;
+  background-color: none;
+}
+
+.wrapper > div {
+  border: 2px solid #f2eb83;
+  border-radius: 5px;
+  background-color: white;
+  padding: 1em;
+  color: #d9480f;
+}
+
+div.bleh img {
+	margin-top: -1vmin;
+    flex-shrink:0;
+    min-width:100%;
+    min-height:100%
+}
+
+
+@keyframes wiggle{
+  0%{
+    transform: translateY(0vmin);
+  }
+  100%{
+    transform: translateY(1vmin);
+  }
+}
+
+@keyframes stretch{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.8);
+  }
+}
+
+
+
+
+@keyframes slide{
+  0%{
+    transform: translateY(-12em);
+  }
+  100%{
+    transform: translateY(2.3em);
+  }
+}
+
+
+.bleh{
+	display: block;
+	height: 15vmax;
+	width: 15vmax;
+	animation: wiggle 1s infinite;
+	animation-direction: alternate;
+	animation-delay: .5s;
+	box-shadow:0px 0px 8px black;
+}
+
+h6{
+	font-size: 10px;
+	font-family: helvetica;
+	font-weight: lighter;
+	text-align: center;
+	color: black;
+	margin-top: -.5vmin;
+}
+
+h6:hover{
+		transition-duration: .5s;
+	}
+
+.bleh:hover{
+	animation: stretch .5s forwards;
+	cursor: pointer;
+	z-index: 1;
+	border-color: black;
+	box-shadow:0px 0px 40px black;  
+	/*transition-duration: 1s;*/
+}
+
+/*img{
+	justify-content: center;
+	align-items: center;
+}*/
+
+/*.shopimg{
+	margin-left: 0vmin;
+	height: 7vmin;
+}*/
+
+.submenu{display:none;
+margin-top: 10vmin;
+margin-left: 10vmin;
+height:5vmin;
+width: 20vmin;
+background-color:#f2eb83;
+padding:.5vmin;
+border-radius: 15px;
+}
+
+#menu{
+	/*position: fixed;*/
+	margin-top: -7vmin;
+}
+
+
+#auctions{
+	/*position: fixed;*/
+	cursor: pointer;
+	/*margin-left: 5vmin;}*/
+
+p{
+	font-family: arial;
+	font-size: 30px;
+	background-color: #f2eb83;
+	padding: 2vmin;
+	border-radius: 15px;
+	color: #727eb6;
+}
+
+
+@keyframes hideme{
+	0%{display: none;}
+	100%{
+		display: inline-block;
+	}
+}
+
+
+
+.mainlogo{
+	position: fixed;
+	margin-top: 10%;
+	margin-left: 4%;
+	opacity: .5;
+	z-index: -1;
+}
+
+.backhider{
+	height: 26.9vmin;
+	margin-left: -2.2vmin;
+	border-radius: 5px;
+	border:2px solid black;
+/*	animation: slide .8s forwards;	*/
+}
+
+
+#menuimg{
+  width: 10vmin;
+  display: block;
+  height: 15vmax;
+  width: 15vmax;
+}
+
+img{
+  height:10vmin;
+}
+
+</style>
+<body>
+
+<div class="wrapper">
+  
+
+  <div class="bleh" >
+  		<img class="shopimg" src="assets/items/hoodie1.jpg">
+			<div class="divhider">
+				<img class="backhider"src="assets/items/hoodie1back.jpg">
+			</div>
+  </div>
+
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/hoodie2.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/hoodie2back.jpg">
+  			</div>
+  </div>
+
+
+
+
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/hoodie3.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/hoodie3back.jpg">
+  			</div>
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/zip1.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/zip1back.jpg">
+  			</div>
+    </div>
+ <div class="bleh" >
+  	<img class="shopimg" src="assets/items/wind1.jpg">
+  			<div class="divhider">
+  				<img class="backhider" class="behind"src="assets/items/wind1back.jpg">
+  			</div>
+  </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/wind2.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/wind2back.jpg">
+  			</div>
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/zip2.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/zip2back.jpg">
+  			</div>
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/zip3.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/zip3back.jpg">
+  			</div>
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/tee1.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/tee1back.jpg">
+  			</div>
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/tee2.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/tee2back.jpg">
+  			</div>
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/tee3.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/tee3back.jpg">
+  			</div>
+    </div>
+  <div class="bleh" >
+    	<img class="shopimg" src="assets/items/tee4.jpg">
+  			<div class="divhider">
+  				<img class="backhider"src="assets/items/tee4back.jpg">
+  			</div>
+    </div>
+
+
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+  <div class="bleh" ></div>
+</div>
+
+
+
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

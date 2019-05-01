@@ -4,11 +4,11 @@ html {
     background-repeat:no-repeat;
     background: linear-gradient(white, black);
 }
-/*
+
 @media (min-width: 600px) {
   h2 {
   font-size: 5px;
-  }*/
+  }
 
 
 .wrapper {
