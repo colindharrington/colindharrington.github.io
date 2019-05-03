@@ -5,7 +5,7 @@ html{
 
 html,body{
   background: linear-gradient(#75EB91, #9198e5);
-  background-size: 100%;
+  background-size: 120%;
   background-repeat: no-repeat;
   /*overflow: hidden;*/
   display: grid;
@@ -17,14 +17,16 @@ html,body{
 }
 
 .wholeright{
-  margin-top: 4vmin;
+  margin-top: 15%;
   width: 90%;
   height: 35%;
-  /*margin-left: 45%;*/
+  position: relative;
+  margin-left: auto;
+  left: 23%;
   border: 10px solid black;
   overflow: scroll;
   z-index: 1;
-  padding: 4vmin;
+  padding: 4%;
 }
 
 
@@ -125,3 +127,33 @@ h3{
 p{
   text-align: center;
 }
+
+@media screen and (max-width: 850px) {
+  body {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 850px) {
+	.wholeright{
+  float: center;
+  height: 80vmin;
+  width: 70%;
+  border: 10px solid black;
+  overflow: scroll;
+  z-index: 1;
+  padding: 4vmin;
+    left: 0%;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+	.lefttext{
+  margin-left:5%;
+  }
+}
+
+
+
+

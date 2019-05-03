@@ -1,11 +1,12 @@
 html{
 	background-color: black;
+	overflow: hidden;
 }
 
 .wrld{
 	position: absolute;
-	margin-top: 10%;
-	margin-left: 0%;
+	margin-top: 5%;
+	margin-left: 5%;
 	clip: rect(0px,290px,400px,0px);
 	opacity: 1;
 	mix-blend-mode: lighten;
@@ -15,25 +16,42 @@ html{
 
 .wrld2{
 	position: absolute;
-	margin-top: 60%;
-	margin-left: 0%;
+	margin-top: 31%;
+	margin-left: 6%;
 	clip: rect(0px,290px,400px,0px);
 	opacity: 1;
 	mix-blend-mode: lighten;
 }
 
 .size{
-	width: 300px;
+	width: 38vmin;
+}
+
+.size2{
+	width: 35vmin;
 }
 
 .back{
 	position: absolute;
 	margin-left: -20%;
+	margin-top: -25%;
 	width: 145%;
 	transform: rotate(-90deg);
-	z-index: 0;
+	z-index: -1;
 }
 
+
+.iss{
+	margin-left: 48%;
+	margin-top: -47%;
+	z-index: 1;
+}
+
+.issimg{
+	width: 90%;
+	filter: drop-shadow(0 0 0.75rem blue);
+
+}
 
 
 #long{
@@ -44,6 +62,7 @@ html{
   display: flex;
   justify-content: left;
   margin-left: 4%;
+  margin-top: 3%;
   z-index: 2;
   text-shadow: 0 0 10px blue, 0 0 10px #2def84;
 }
@@ -54,16 +73,20 @@ html{
   position: relative;
   display: flex;
   justify-content: left;
-  margin-top: 40%;
+  margin-top: 21%;
   margin-left: 4%;
   z-index: 2;
   text-shadow: 0 0 10px blue, 0 0 10px #2def84;
 }
 
 #sineCanvas{
+	width: 53%;
+	background-color: #1258c9;
+	padding: 4vmin;
 	display: relative;
 	transform: rotate(90deg);
-	margin-top: -20vmin;
-	margin-left: 20vmin;
+	margin-left: 60%;
 	z-index: 1;
+	transform: translateY(-1vmin);
+	filter: drop-shadow(0 0 0.75rem blue);
 }
