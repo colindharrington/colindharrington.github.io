@@ -1,0 +1,164 @@
+/** {
+  box-sizing: border-box;
+}*/
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+  background-size: cover;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+
+#myBtn {
+  position: fixed;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  margin-left: 2%;
+  margin-top: 24%;
+  border-radius: 5px;
+  font-family: silom;
+}
+#myBtn2 {
+  position: fixed;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  margin-left: 17%;
+  margin-top: 24%;
+  border-radius: 5px;
+  font-family: silom;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.container{
+  position: fixed;
+  padding: 3vmin;
+  left: 44%;
+  top: 4%;
+  width: 89vmin;
+  height: 84vmin;
+  color: red;
+  background-color: rgba(255,255,255,.5);
+  z-index: 1;
+  overflow: scroll;
+  border:5px solid black;
+  border-radius: 15px;
+}
+
+.spacejunktext{
+  margin-left: 1%;
+  position: relative;
+  width: 20vmin;
+  animation: stomp .9s infinite;
+}
+
+
+img{
+  display: inline-block;
+}
+
+@keyframes stomp{
+  50%{transform: translate(0,.5vmin);}
+  100%{transform: initial;} 
+}
+
+
+/*--------------*/
+
+.explore{
+  width: 13%;
+  animation: stomp .9s infinite;
+  margin-left: 3.7%;
+  right: 90%;
+}
+
+.teevee{
+  width:12%;
+  animation: stomp .9s infinite;
+  margin-top: 1%;
+  margin-left: 4%;
+}
+
+.about{
+  width: 10%;
+  animation: stomp .9s infinite;
+  margin-top: 2%;
+  margin-left: 4%;
+}
+
+/*--------------*/
+
+
+.clothes{
+  width: 100%;
+  filter: drop-shadow(0 0 0.7rem black);
+}
+
+.clothes:hover{
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+
+  /*-----------------*/
+
+
+  .wrapper {
+  display: grid;
+  justify-content: center;
+  padding: 1vmin;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 15px;
+  grid-row-gap: 30px;
+  color: #444;
+  opacity: 1;
+}
+
+.box {
+  color: #fff;
+  border-radius: 5px;
+  font-size: 150%;
+}
+
+
+.price{
+  visibility: hidden;
+  margin-left: 15%;
+  color: white;
+  width: 120px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  font-family: silom;
+  filter: drop-shadow(0 0 0.2rem black);
+}
+
+.box:hover .price{
+  visibility: visible;
+}
