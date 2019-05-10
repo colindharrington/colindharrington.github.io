@@ -90,3 +90,65 @@ html{
 	transform: translateY(-1vmin);
 	filter: drop-shadow(0 0 0.75rem blue);
 }
+
+@media screen and (max-width: 500px) {
+  .wrld{
+  	position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  .wrld2{
+	position: relative;
+	margin-top: 8%;
+	padding: 10vmin;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .back{
+  	width: 200%;
+  	position: absolute;
+	margin-left: -29%;
+  	margin-top: 20%;
+}
+
+@media screen and (max-width: 500px) {
+  body{
+	overflow: visible;
+}
+
+
+@media screen and (max-width: 500px) {
+  #long{
+  	position: fixed;
+	margin-left: 4%;
+    margin-top: -90%;
+}
+
+@media screen and (max-width: 500px) {
+  #lat{
+	position: fixed;
+	margin-top: -35%;
+	margin-left: 10%;
+}
+
+@media screen and (max-width: 500px) {
+  canvas{
+  	margin-top: 37%;
+	width: 150;
+	height: 100;
+}
+
+
+@media screen and (max-width: 500px) {
+  .iss{
+  	position: absolute;
+	margin-left: 10%;
+	margin-top: -50%;
+}
+
+@media screen and (max-width: 500px) {
+  .issimg{
+  	width: 60%;
+}
